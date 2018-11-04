@@ -6,21 +6,30 @@ BP's run this script to keep the original abi/wasm of enu.msig
 > sh step_1_bps.sh 
 
 ### Step 2 \[required\]
-At about 2018.11.05 12:00:00, I will generate a non-signed transaction of setting contract of enu.msig and save it to `upgrade_enumsig_contract_trx.json`, then modify the expiration of the transaction to Beijing 2018.11.05 21:00:00. Then I will rename it to `upgrade_enumsig_contract_official_trx.json` and upload to this repo.
+At about 2018.11.05 12:00:00, I(ansenironman) will generate a non-signed transaction of setting contract of enu.msig and save it to `upgrade_enumsig_contract_trx.json`, then modify the expiration of the transaction to Beijing 2018.11.05 21:00:00. Then I will rename it to `upgrade_enumsig_contract_official_trx.json` and upload to this repo.
 > sh step_2_leader.sh
 
 ### Step 3 \[required\]
-More than 15 bp's sign the transaction `upgrade_enumsig_contract_official_trx.json` with the producer's **active private key**. Just run the following command and it will ask you to input the key.
+Before 2018.11.05 12:00:00 and 2018.11.05 21:00:00, BP's please pull the latest version of this repo, there should be a `upgrade_enumsig_contract_official_trx.json` file in this dircectory.
+
+It's required more than 15 bp's sign the transaction `upgrade_enumsig_contract_official_trx.json` with the producer's **active private key**. 
+
+Just run the following command and it will ask you to input the key.
 
 > ./step_3_bps.sh
 
 After input the private key and press enter, you will get the output with the last few lines like this
 
 >   "transaction_extensions": [],
+>
 >  "signatures": [
+>
 >    **"SIG_K1_JuuiwMk3yW58CN8Ww5ZdzjV6daavLDXT85WfCaBxfyenxY2f18JHUeCGSi4mqs7cQxAVhoV5atCer2zPSNocTGDJwy8Wb8"**
+>
 >  ],
+>
 >  "context_free_data": []
+>
 >}
 
 Please post your bp's mainnet account and the signature in this [issue]().
