@@ -1,5 +1,5 @@
 # Steps to upgrade enu.msig contract with offline signing
-There are four steps to upgrade enu.msig contract, step 1 and 4 is done by all bp's. step 2 and 3 is done by a leader.
+There are four steps to upgrade enu.msig contract, step 1 and 3 is done by all bp's. step 2 and 4 is done by a leader.
 
 ### Setp 1
 All bp's run this script to keep the original abi/wasm of enu.msig
