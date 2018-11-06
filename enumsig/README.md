@@ -32,7 +32,7 @@ After input the private key and press enter, you will get the output with the la
 >
 >}
 
-Please post your bp's mainnet account and the signature in this [issue](https://github.com/AnsenYu/ENU-mainnet-contract-upgrade/issues/1).
+Please transfer 0.0001 ENU to ansenironman with your bp's mainnet account and with the signature in the memo.
 
 Those bp's who want to validate the new contract can compile **enumivo.contracts** project and exec the same script of `step_2_leader.sh`(change the CONTRCACT_ROOT_PATH variable in the script first), to get his own generate transaction json file. 
  Then use diff command to compare with the one provided in this repo.
